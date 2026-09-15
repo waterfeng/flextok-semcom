@@ -1,0 +1,8 @@
+# Requires Python >=3.10
+hydra-core
+torch>=2.5.0
+einops
+diffusers>=0.18.0.dev0
+mup
+huggingface_hub
+safetensors
