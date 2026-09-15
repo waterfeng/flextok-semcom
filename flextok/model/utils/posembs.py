@@ -121,7 +121,7 @@ class PositionalEmbedding(nn.Module):
         if self.posemb_scaling == "absolute":
             # Crop the posemb according to the tensor sizes
             slices = [slice(None), slice(None)] + [slice(None, n) for n in shape]
-            posembs = posembs[slices]
+            posembs = posembs[tuple(slices)]
         elif self.posemb_scaling == "interpolate":
             # Adapt to specific tensor size by interpolating entire posemb
             posembs = F.interpolate(posembs, shape, mode="bilinear", align_corners=True)

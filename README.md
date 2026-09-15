@@ -27,17 +27,19 @@ Official implementation and pre-trained models for: <br>
 ### Installation
 1. Clone this repository and navigate to the root directory:
 ```bash
-git clone https://github.com/apple/ml-flextok
-cd ml-flextok
+git clone https://github.com/waterfeng/flextok-semcom.git
+cd flextok-semcom
 ```
 
-2. Create a new conda environment, then install the package and its dependencies:
+2. Create a new conda environment, then install the dependencies (Python >=3.10):
 ```bash
 conda create -n flextok python=3.10 -y
-source activate flextok
-pip install --upgrade pip  # enable PEP 660 support
-pip install -e .
+conda activate flextok
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
+
+Run Python from the repository root to import the local `flextok` source. For scripts in subdirectories, use module execution from the root, for example `python -m finetune.train` for `finetune/train.py`.
 
 3. Verify that CUDA is available in PyTorch by running the following in a Python shell:
 ```bash
