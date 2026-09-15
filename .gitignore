@@ -12,3 +12,5 @@ wandb/
 *.egg-info
 models/
 outputs/
+datasets/
+inputs/

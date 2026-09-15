@@ -46,7 +46,7 @@ from flextok.utils.misc import detect_bf16_support, get_bf16_context, get_genera
 
 DEFAULT_MODEL_PATH = (
     "~/Documents/b412/zhaoxinfeng/flextok-semcom/"
-    "models/flextok_d18_d28_dfn_model.safetensors"
+    "models/flextok_d18_d28_dfn/model.safetensors"
 )
 
 DEFAULT_DEMO_URLS = [
